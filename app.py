@@ -38,4 +38,4 @@ def article(slug:str):
   return render_template("article.html",title=article.title,content=article.content)
 
 if __name__ == '__main__':
-  app.run(port=4200,debug=True)
+  app.run(host='0.0.0.0',port=4200,debug=True)
